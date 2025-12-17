@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.head{
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    background: #395034;
+    color: #fff;
+    font-weight: 600;
+}
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #65bb4f;
+}
+.container{
+    width: 500px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 70px;
+    color: #273524;
+    text-align: center;
+}
+#inputBox{
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+    border: 2px solid #273524;
+    text-transform: capitalize;
+}
+#inputBox::placeholder{
+    color: rgb(83, 83, 83);
+}
+#voiceBtn{
+    height: 44px;
+    cursor: pointer;
+    border: 2px solid #273524;
+    border-radius: 5px;
+    background: #273524;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: .3s;
+}
+#voiceBtn:hover{
+    background: #395034;
+    border: 2px solid #395034;
+}
+span{
+    font-weight: 700;
+}
+.box{
+    display: flex;
+    align-items: center;
+}
+.bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+input[type="radio"]{
+    cursor: pointer;
+    accent-color: #395034;
+}
+.footer{
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    background: #273524;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: 500;
+}
+p{
+    font-weight: 500;
+}
+
+@media (max-width: 428px) {
+    .head{
+        font-size: 30px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .container{
+        width: 90%;
+    }
+    #inputBox{
+        font-size: 15px;
+    }
+    #voiceBtn{
+        width: 42px;
+        height: 36px;
+    }
+    .bar{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        gap: 10px;
+        font-size: 15px;
+    }
+    .footer{
+        font-size: 15px;
+    }
+}
